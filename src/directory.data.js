@@ -33,4 +33,4 @@ const Sections = [
   },
 ];
 
-export default Sections;
+export { Sections };
