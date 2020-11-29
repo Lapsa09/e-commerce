@@ -1,7 +1,6 @@
-import { findAllByTitle } from "@testing-library/react";
 import React from "react";
 import "./collection-preview.styles.scss";
-import CollectionItem from "./CollectionItem";
+import CollectionItem from "../collectionItem/CollectionItem";
 
 function PreviewCollection({ title, items }) {
   return (
