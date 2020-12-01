@@ -1,12 +1,13 @@
 import React from "react";
 import SignIn from "../../components/signIn/Sign-in";
+import SignUp from "../../components/signUp/Sign-up";
 import "./signIn.scss";
 
 function signInPage() {
   return (
-    <div className="signin-sign-up">
-      SIGN IN
+    <div className="signin-signup">
       <SignIn />
+      <SignUp />
     </div>
   );
 }
