@@ -13,7 +13,7 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (password != confirmPassword) {
+    if (password !== confirmPassword) {
       alert("Passwords don't match");
       return;
     }
@@ -49,6 +49,8 @@ function SignUp() {
         break;
       case "confirmPassword":
         setConfirmPassword(value);
+        break;
+      default:
         break;
     }
   };
