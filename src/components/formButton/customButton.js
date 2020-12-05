@@ -1,11 +1,13 @@
 import React from "react";
 import "./custom-button.styles.scss";
 
-function FormButton({ children, isGoogleSignIn, ...otherProps }) {
+function FormButton({ children, isGoogleSignIn, inverted, ...otherProps }) {
   return (
     <button
       type="submit"
-      className={`${isGoogleSignIn ? "google-sign-in" : ""} custom-button`}
+      className={`${inverted ? "inverted" : ""}${
+        isGoogleSignIn ? "google-sign-in" : ""
+      } custom-button`}
       {...otherProps}
     >
       {children}
