@@ -1,4 +1,3 @@
-import "./App.css";
 import HomePage from "./pages/homePage/HomePage";
 import { Switch, Route, Redirect } from "react-router-dom";
 import ShopPage from "./pages/shopPage/Shop";
@@ -11,6 +10,7 @@ import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user-actions";
 import { selectCurrentUser } from "./redux/user/user-selector";
 import { createStructuredSelector } from "reselect";
+import { GlobalStyle } from "./global.styles";
 
 function App({ currentUser, setCurrentUser }) {
   var unsubscribeFromAuth = null;
@@ -35,6 +35,7 @@ function App({ currentUser, setCurrentUser }) {
 
   return (
     <div className="App">
+      <GlobalStyle />
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
